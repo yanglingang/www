@@ -1,13 +1,13 @@
 /* PRELOADER IMAGE BACKGROUND */
 .status {
-	background-image: url(images/loader-blue.gif);
+	background-image: url(../images/loader-blue.gif);
 	background-repeat: no-repeat;
 	background-position: center;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
 
-/* THE OVERLAY COLORS WHICH WILL SHOW IN FRONT OF BACKGROUND IMAGES*/
+/* THE OVERLAY COLORS WHICH WILL SHOW IN FRONT OF BACKGROUND ../images*/
 .overlay-layer {
 	background: rgba(0, 5, 8, 0.75);
 }
