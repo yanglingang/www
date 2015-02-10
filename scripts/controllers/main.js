@@ -27,8 +27,10 @@ jQuery(function($) {
                 1: 'section2',
                 2: 'section3',
                 3: 'section4',
-                4: 'section5',
-                5: 'section6'
+                4: 'section7',
+                5: 'section8',
+                6: 'section9',
+                7: 'section10'
             },
             itemClass: 'menuItem',
             itemHover: 'menuItem-Active',

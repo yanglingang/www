@@ -1,6 +1,6 @@
 (function ($j) {
 
-  switch_style = {
+  var switch_style = {
 
     onReady: function () {      
       this.switch_style_click();

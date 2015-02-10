@@ -45,6 +45,7 @@
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -56,15 +57,12 @@
     <link rel="stylesheet" href="styles/nivo-lightbox.themes.default.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/responsive.css">
-    <link rel="stylesheet" id="color-switch" href="styles/blue.css">
-    <!-- DEFAULT COLOR/ CURRENTLY USING -->
-    <!-- <link rel="stylesheet" href="styles/red.css"> -->
-    <!-- <link rel="stylesheet" href="styles/green.css"> -->
-    <!-- <link rel="stylesheet" href="styles/green2.css"> -->
-    <!-- <link rel="stylesheet" href="styles/purple.css"> -->
-    <!-- <link rel="stylesheet" href="styles/orange.css"> -->
-    <!-- CSS FOR DEMO - NOT INCLUDED IN MAIN FILES -->
+
     <link rel="stylesheet" href="styles/demo.css">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <!-- endbuild -->
+
     <!--[if lt IE 9]>
       <script src="scripts/html5shiv.min.js"></script>
     <![endif]-->
@@ -76,12 +74,15 @@
         }
       </style>
     <![endif]-->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
 
-
-
-
+    <link rel="stylesheet" id="color-switch" href="styles/blue.css">
+    <!-- DEFAULT COLOR/ CURRENTLY USING -->
+    <!-- <link rel="stylesheet" href="styles/red.css"> -->
+    <!-- <link rel="stylesheet" href="styles/green.css"> -->
+    <!-- <link rel="stylesheet" href="styles/green2.css"> -->
+    <!-- <link rel="stylesheet" href="styles/purple.css"> -->
+    <!-- <link rel="stylesheet" href="styles/orange.css"> -->
+    <!-- CSS FOR DEMO - NOT INCLUDED IN MAIN FILES -->
 </head>
 
 <body ng-app="wwwApp">
@@ -102,7 +103,7 @@
      SECTION: HOME / HEADER  
     ============================== -->
     <!-- STICKY NAVIGATION -->
-    <div class="navbar navbar-inverse bs-docs-nav sticky-navigation" role="navigation" style="opacity: 1; top: 0px;">
+    <div id="topBar" class="navbar navbar-inverse bs-docs-nav sticky-navigation" role="navigation" style="opacity: 1; top: 0px;">
         <div class="container">
             <div class="navbar-header">
 
@@ -205,6 +206,9 @@
             <div class="container">
                 <div class="clients">
                     <ul class="client-logos">
+                        <li>
+                            <a href="#topBar"><i class="fa fa-angle-double-up fa-2x"></i></a>
+                        </li>
                         <li class="menuItem">
                             <a href="#section1">服务介绍</a>
                         </li>
@@ -219,11 +223,19 @@
                             </a>
                         </li>
                         <li class="menuItem">
-                            <a href="#section7">仓库运营
+                            <a href="#section7">仓储运营
                             </a>
                         </li>
                         <li class="menuItem">
                             <a href="#section8">运输管理
+                            </a>
+                        </li>
+                        <li class="menuItem">
+                            <a href="#section9">团队介绍
+                            </a>
+                        </li>
+                        <li class="menuItem">
+                            <a href="#section10">合作感言
                             </a>
                         </li>
                     </ul>
@@ -244,7 +256,7 @@
                 <div class="small-text-medium uppercase colored-text">
                     服务介绍
                 </div>
-                <h2 class="dark-text">我们提供<strong>供应链管理内容</strong></h2>
+                <h2 class="dark-text">我们提供<strong>供应链管理服务</strong></h2>
                 <div class="colored-line">
                 </div>
                 <div class="sub-heading">
@@ -458,7 +470,7 @@
                         </div>
                         <h4 class="white-text">2000+</h4>
                         <p class="uppercase transparent-text small-text">
-                            ERP厂商
+                            电商ERP厂商
                         </p>
                     </div>
 
@@ -531,7 +543,7 @@
                             <div class="grey-line-short pull-left">
                             </div>
                             <p class="text-left">
-                                借助互联网完成信息的传递，信息传输的深度和广度决定了ERP的价值覆盖
+                                借助互联网完成信息的传递，信息传输的深度和广度决定了系统的价值覆盖
                             </p>
                         </div>
                     </div>
@@ -658,7 +670,7 @@
                             </div>
                         </div>
 
-                        <h2 class="price"><span class="superscript">$</span>150<span class="month small-text">Per Month</span></h2>
+                        <h2 class="price"><span class="superscript"></span>Free<span class="month small-text"></span></h2>
 
                         <ul class="package-list">
                             <li><span class="dark-text strong">50GB</span>File Storage</li>
@@ -687,7 +699,7 @@
                             <h3 class="white-text">完整版</h3>
                         </div>
 
-                        <h2 class="price"><span class="superscript">$</span>199<span class="month small-text">Per Month</span></h2>
+                        <h2 class="price"><span class="superscript">$</span>175<span class="month small-text">Per Month</span></h2>
 
                         <ul class="package-list">
                             <li><span class="colored-text strong">150GB</span>File Storage</li>
@@ -713,11 +725,11 @@
                     <div class="single-pricing border-bottom-hover">
 
                         <div class="package-title">
-                            <h3 class="colored-text">复杂版</h3>
+                            <h3 class="colored-text">增值版</h3>
                             <div class="colored-line">
                             </div>
                         </div>
-                        <h2 class="price"><span class="superscript">$</span>175<span class="month small-text">Per Month</span></h2>
+                        <h2 class="price"><span class="superscript">$</span>199<span class="month small-text">Per Month</span></h2>
 
                         <ul class="package-list">
                             <li><span class="dark-text strong">80GB</span>File Storage</li>
@@ -751,13 +763,13 @@
                 <!-- SECTION HEADER -->
                 <div class="section-header">
                     <div class="small-text-medium uppercase colored-text">
-                        仓库运营
+                        仓储运营
                     </div>
-                    <h2 class="white-text"><span class="strong white-text">Explore</span> Screenshots</h2>
+                    <h2 class="white-text">供应链运营的<span class="strong white-text">交通枢纽</span></h2>
                     <div class="colored-line">
                     </div>
                     <div class="sub-heading white-text">
-                        Cloud computing subscription model out of the box proactive solution.
+                        仓储运营决定着供应链效率，如何降低时间成本、流通成本都可以在仓储运营过程中得到持续的改进
                     </div>
                 </div>
 
@@ -768,25 +780,25 @@
 
                         <!-- SINGLE ELEMENT -->
                         <div class="single-feature border-right-colored">
-                            <h4 class="colored-text">Creative Design</h4>
+                            <h4 class="colored-text">职能范围</h4>
                             <p class="transparent-text">
-                                Coworking viral landing page user base minimum viable
+                                完成货物的存放及流通，是各种资源配合一致的舞台
                             </p>
                         </div>
 
                         <!-- SINGLE ELEMENT -->
                         <div class="single-feature border-right-colored">
-                            <h4 class="colored-text">Easy to Customize</h4>
+                            <h4 class="colored-text">以点带面</h4>
                             <p class="transparent-text">
-                                Coworking viral landing page user base minimum viable
+                                业务覆盖范围内，科学设定仓库位置，满足业务覆盖所需
                             </p>
                         </div>
 
                         <!-- SINGLE ELEMENT -->
                         <div class="single-feature border-right-colored">
-                            <h4 class="colored-text">Bootstrap 3.3.1</h4>
+                            <h4 class="colored-text">信息流通</h4>
                             <p class="transparent-text">
-                                Coworking viral landing page user base minimum viable
+                                货物的流通以信息为驱动，仓储成为驱动供应链推进的信息源头
                             </p>
                         </div>
 
@@ -847,25 +859,25 @@
 
                         <!-- SINGLE ELEMENT -->
                         <div class="single-feature border-left-colored">
-                            <h4 class="colored-text">Online Support</h4>
+                            <h4 class="colored-text">波次驱动</h4>
                             <p class="transparent-text">
-                                Coworking viral landing page user base minimum viable
+                                以业务波次为驱动，以任务分解波次，完成业务运营
                             </p>
                         </div>
 
                         <!-- SINGLE ELEMENT -->
                         <div class="single-feature border-left-colored">
-                            <h4 class="colored-text">Easy Shipping</h4>
+                            <h4 class="colored-text">资源调度</h4>
                             <p class="transparent-text">
-                                Coworking viral landing page user base minimum viable
+                                科学设定仓库的业务容量，并完成执行过程中内外部的资源协调
                             </p>
                         </div>
 
                         <!-- SINGLE ELEMENT -->
                         <div class="single-feature border-left-colored">
-                            <h4 class="colored-text">Secure Payment</h4>
+                            <h4 class="colored-text">安全质量</h4>
                             <p class="transparent-text">
-                                Coworking viral landing page user base minimum viable
+                                运营可回溯，货品可溯源，设定质量标准，可视化管理
                             </p>
                         </div>
                     </div>
@@ -886,15 +898,15 @@
                 <!-- TIMELINE HEADING / TEXT  -->
                 <div class="col-md-6 timeline-text text-left wow fadeInLeft" data-wow-offset="20" data-wow-duration="1.75s" style="visibility: hidden; -webkit-animation: none 1.75s;">
                     <div class="small-text-medium uppercase colored-text text-left">
-                        Timeline
+                        运输管理
                     </div>
-                    <h2 class="text-left dark-text"><strong>Amazing</strong> Journey</h2>
+                    <h2 class="text-left dark-text">商品的<strong>旅程</strong></h2>
                     <div class="colored-line-left">
                     </div>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.
+                        仓储是供应链的心脏，运输则是供应链的血管，负责将货物运送到需要它的地方，同样的，效率、安全、可视化成为运输管理必不可少的关注点
                         <br>
-                        <br>Main differentiators business model micro economics marketplace equity augmented reality human computer interaction. Board members super angel preferred stock.
+                        <br>平台可以完成运输过程中资源的调配，借助电子设备完成货物安全的管控，以及过程的跟踪和预警
                     </p>
                 </div>
 
@@ -928,7 +940,7 @@
                             <span class="icon-ribbon-alt"></span>
                         </div>
                         <div class="info">
-                            Drinking vinegar Echo Park selfies heirloom aesthetic, taxidermy keytar next level craft beer.
+                            ... ...
                         </div>
                     </li>
                     <li>
@@ -939,7 +951,7 @@
                             <span class="icon-piechart"></span>
                         </div>
                         <div class="info">
-                            American Apparel meggings asymmetrical organic Marfa typewriter shabby chic Brooklyn, farm-to-table butcher.
+                            ... ...
                         </div>
                     </li>
                     <li>
@@ -950,7 +962,7 @@
                             <span class="icon-cart-alt"></span>
                         </div>
                         <div class="info">
-                            Keytar stumptown hoodie, crucifix meggings messenger bag brunch deep v. High Life taxidermy mumblecore.
+                            ... ...
                         </div>
                     </li>
                     <li>
@@ -961,7 +973,7 @@
                             <span class="icon-paperclip"></span>
                         </div>
                         <div class="info">
-                            Wayfarers Carles seitan, VHS bicycle rights normcore butcher skateboard bitters Portland cred.
+                            ... ...
                         </div>
                     </li>
                     <li>
@@ -972,7 +984,7 @@
                             <span class="icon-check"></span>
                         </div>
                         <div class="info">
-                            Four loko Pitchfork cred irony selfies meggings lo-fi iPhone hashtag, craft beer Helvetica crucifix keytar.
+                            ... ...
                         </div>
                     </li>
                     <li>
@@ -983,7 +995,7 @@
                             <span class="icon-lightbulb-alt"></span>
                         </div>
                         <div class="info">
-                            Cosby sweater viral Etsy lo-fi Carles. Paleo kogi kale chips McSweeney's bicycle rights behind the scene.
+                            ... ...
                         </div>
                     </li>
                     <li>
@@ -994,7 +1006,7 @@
                             <span class="icon-ribbon-alt"></span>
                         </div>
                         <div class="info">
-                            Drinking vinegar Echo Park selfies heirloom aesthetic, taxidermy keytar next level craft beer.
+                            ... ...
                         </div>
                     </li>
                 </div>
@@ -1012,13 +1024,13 @@
             <!-- SECTION HEADER -->
             <div class="section-header">
                 <div class="small-text-medium uppercase colored-text">
-                    Team
+                    团队
                 </div>
-                <h2 class="dark-text"><strong>Project</strong> Team</h2>
+                <h2 class="dark-text"><strong>管理</strong>团队</h2>
                 <div class="colored-line">
                 </div>
                 <div class="sub-heading">
-                    Cloud computing subscription model out of the box proactive solution.
+                    拥有清晰的管理团队，战略资源与执行资源的完美搭配
                 </div>
             </div>
 
@@ -1029,12 +1041,12 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="team-member wow flipInY" data-wow-offset="10" data-wow-duration="1s" style="visibility: hidden; -webkit-animation: none 1s;">
                         <div class="member-pic">
-                            <img src="images/team/1.jpg" alt="">
+                            <img src="" alt="">
                         </div>
                         <div class="member-details">
-                            <h5 class="colored-text">Albert Jacobs</h5>
+                            <h5 class="colored-text"> </h5>
                             <div class="small-text">
-                                Founder &amp; CEO
+                                董事长 | CEO
                             </div>
                         </div>
                         <ul class="social-icons">
@@ -1061,12 +1073,12 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="team-member wow flipInY" data-wow-offset="10" data-wow-duration="1s" style="visibility: hidden; -webkit-animation: none 1s;">
                         <div class="member-pic">
-                            <img src="images/team/2.jpg" alt="">
+                            <img src="" alt="">
                         </div>
                         <div class="member-details">
-                            <h5 class="colored-text">George Walker</h5>
+                            <h5 class="colored-text"> </h5>
                             <div class="small-text">
-                                Web Developer
+                                营销总监 | CMO
                             </div>
                         </div>
                         <ul class="social-icons">
@@ -1093,12 +1105,12 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="team-member wow flipInY" data-wow-offset="10" data-wow-duration="1s" style="visibility: hidden; -webkit-animation: none 1s;">
                         <div class="member-pic">
-                            <img src="images/team/3.jpg" alt="">
+                            <img src="" alt="">
                         </div>
                         <div class="member-details">
-                            <h5 class="colored-text">Frank Hanson</h5>
+                            <h5 class="colored-text"> </h5>
                             <div class="small-text">
-                                UI Designer
+                                财务总监 | CFO
                             </div>
                         </div>
                         <ul class="social-icons">
@@ -1125,12 +1137,12 @@
                 <div class="col-md-3 col-sm-6 team-member">
                     <div class="wow flipInY" data-wow-offset="10" data-wow-duration="1s" style="visibility: hidden; -webkit-animation: none 1s;">
                         <div class="member-pic">
-                            <img src="images/team/4.jpg" alt="">
+                            <img src="" alt="">
                         </div>
                         <div class="member-details">
-                            <h5 class="colored-text">Emily Smith</h5>
+                            <h5 class="colored-text"> </h5>
                             <div class="small-text">
-                                App Developer
+                                技术总监 | CTO
                             </div>
                         </div>
                         <ul class="social-icons">
@@ -1166,7 +1178,7 @@
             <!-- SECTION HEADER -->
             <div class="section-header">
                 <div class="small-text-medium uppercase colored-text">
-                    Testimonials
+                    合作感言
                 </div>
                 <h2 class="dark-text"><strong>Happy</strong> Customers</h2>
                 <div class="colored-line">
@@ -1243,12 +1255,12 @@
                     <div class="col-md-8 col-md-offset-2">
 
                         <div class="uppercase colored-text strong">
-                            30 Days free trial
+
                         </div>
 
-                        <h2 class="white-text strong wow fadeInLeft" data-wow-duration="2s" data-wow-offset="40" style="visibility: hidden; -webkit-animation: none 2s;">Start your FREE Trial Now!</h2>
+                        <h2 class="white-text strong wow fadeInLeft" data-wow-duration="2s" data-wow-offset="40" style="visibility: hidden; -webkit-animation: none 2s;"></h2>
 
-                        <button class="btn btn-primary standard-button wow fadeInRight" data-wow-duration="2s" data-wow-offset="40" type="button" data-toggle="modal" data-target="#stamp-modal" style="visibility: hidden; -webkit-animation: none 2s;">Get Started</button>
+                        <button class="btn btn-primary standard-button wow fadeInRight" data-wow-duration="2s" data-wow-offset="40" type="button" data-toggle="modal" data-target="#stamp-modal" style="visibility: hidden; -webkit-animation: none 2s;">加入我们</button>
 
                     </div>
 
@@ -1299,7 +1311,7 @@
                     <div class="icon-container">
                         <span class="icon-basic-mail colored-text"></span>
                     </div>
-                    <a href="mailto:hey@designlab.co" class="strong">hey@designlab.co</a>
+                    <a href="mailto:hey@designlab.co" class="strong">xxx@xxx.com</a>
                 </div>
 
                 <div class="col-sm-4">
@@ -1360,6 +1372,7 @@
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
@@ -1372,6 +1385,15 @@
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/stickUp/stickUp.js"></script>
+    <script src="bower_components/WOW/dist/wow.js"></script>
+    <script src="bower_components/ajaxchimp/jquery.ajaxchimp.js"></script>
+    <script src="bower_components/retina.js/dist/retina.js"></script>
+    <script src="bower_components/jquery.stellar/jquery.stellar.js"></script>
+    <script src="bower_components/nivo-lightbox/nivo-lightbox.js"></script>
+    <script src="bower_components/jQuery-One-Page-Nav/jquery.nav.js"></script>
+    <script src="bower_components/raf.js/raf.js"></script>
+    <script src="bower_components/smoothscroll/dist/smoothscroll.js"></script>
+    <script src="bower_components/owl.carousel.ta/owl-carousel/owl.carousel.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -1392,14 +1414,6 @@
         jQuery(".preloader").delay(1000).fadeOut("slow");
     })
     </script>
-    <script src="scripts/smoothscroll.js"></script>
-    <script src="scripts/jquery.nav.js"></script>
-    <script src="scripts/wow.min.js"></script>
-    <script src="scripts/nivo-lightbox.min.js"></script>
-    <script src="scripts/owl.carousel.min.js"></script>
-    <script src="scripts/jquery.stellar.min.js"></script>
-    <script src="scripts/retina.min.js"></script>
-    <script src="scripts/jquery.ajaxchimp.min.js"></script>
 
     <!-- CUSTOM JS  -->
     <script src="scripts/custom.js"></script>
