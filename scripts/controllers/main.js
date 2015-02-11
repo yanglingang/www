@@ -16,25 +16,7 @@ angular.module('wwwApp')
         ];
     });
 
+angular.module('wwwApp')
+    .controller('JoinCtrl', function($scope) {
 
-jQuery(function($) {
-    $(document).ready(function() {
-        //enabling stickUp on the '.navbar-wrapper' class
-        $('#stickUpBar').stickUp({
-            //enabling marginTop with the 'auto' setting parts: {
-            parts: {
-                0: 'section1',
-                1: 'section2',
-                2: 'section3',
-                3: 'section4',
-                4: 'section7',
-                5: 'section8',
-                6: 'section9',
-                7: 'section10'
-            },
-            itemClass: 'menuItem',
-            itemHover: 'menuItem-Active',
-            marginTop: 'auto'
-        });
     });
-});
