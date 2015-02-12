@@ -34,6 +34,6 @@ angular
                 controller: 'JoinCtrl'
             })
             .otherwise({
-                redirectTo: '/join'
+                redirectTo: '/'
             });
     }]);

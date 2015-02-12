@@ -25,10 +25,10 @@ angular.module('wwwApp').controller('MainCtrl', ['$anchorScroll', '$location', '
         //     }
         // };
         $scope.init = function() {
-            // setTimeout(function() {
-
-            //     cbpHorizontalMenu.init();
-            // }, 1000);
+            setTimeout(function() {
+                /* global cbpHorizontalMenu */
+                cbpHorizontalMenu.init();
+            }, 1000);
 
             $(".status").fadeOut();
             $(".preloader").delay(1000).fadeOut("slow");
@@ -280,5 +280,5 @@ angular.module('wwwApp').controller('MainCtrl', ['$anchorScroll', '$location', '
 
 angular.module('wwwApp')
     .controller('JoinCtrl', function($scope) {
-
+        $scope.title = "";
     });
