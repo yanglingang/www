@@ -25,8 +25,10 @@ angular.module('wwwApp').controller('MainCtrl', ['$anchorScroll', '$location', '
         //     }
         // };
         $scope.init = function() {
+            // setTimeout(function() {
 
-
+            //     cbpHorizontalMenu.init();
+            // }, 1000);
 
             $(".status").fadeOut();
             $(".preloader").delay(1000).fadeOut("slow");
@@ -100,20 +102,20 @@ angular.module('wwwApp').controller('MainCtrl', ['$anchorScroll', '$location', '
 
             function mainNav() {
                 var top = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-                if (top > 550) {
+                if (top > 600) {
                     $('.appear-on-scroll').stop().animate({
                         "top": '-70',
                         "opacity": '0'
                     });
 
-                    $("#stickUpBar").css("position","absolute");
-                    $("#stickUpBar").css("top",top);
+                    $("#stickUpBar").css("position", "absolute");
+                    $("#stickUpBar").css("top", top);
                 } else {
                     $('.appear-on-scroll').stop().animate({
                         "opacity": '1',
                         "top": '0'
                     });
-                    $("#stickUpBar").css("position","");
+                    $("#stickUpBar").css("position", "");
                 }
 
                 /* if (top > 95) {
@@ -133,7 +135,7 @@ angular.module('wwwApp').controller('MainCtrl', ['$anchorScroll', '$location', '
                         } */
             }
 
-            mainNav();
+
             $(window).scroll(function() {
                 mainNav();
             });

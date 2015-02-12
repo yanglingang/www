@@ -632,7 +632,7 @@ strong, .strong {
     -webkit-background-size: cover;
     background-size: cover;
 }
-.stats .overlay-layer-2 {
+.stats .overlay-layer {
     padding-top: 80px;
     padding-bottom: 80px;
 }
