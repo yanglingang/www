@@ -11,17 +11,6 @@ $(window).load(function() {
     });
     wow.init();
 
-    /*---------------------------------------*/
-    /*  NAVIGATION
-    /*---------------------------------------*/
-    $('.main-navigation').onePageNav({
-        changeHash: true,
-        currentClass: 'not-active',
-        /* CHANGE THE VALUE TO 'current' TO HIGHLIGHT CURRENT SECTION LINK IN NAV*/
-        scrollSpeed: 750,
-        scrollThreshold: 0.5,
-        filter: ':not(.external)'
-    });
 
     /*---------------------------------------*/
     /*  STELLAR FOR BACKGROUND SCROLLING
@@ -89,23 +78,6 @@ $(window).load(function() {
     });
 
 
-    /*---------------------------------------*/
-    /*  SMOOTH SCROLL FRO INTERNAL #HASH LINKS
-    /*---------------------------------------*/
-
-    $('a[href^="#"].inpage-scroll, .inpage-scroll a[href^="#"]').on('click', function(e) {
-        e.preventDefault();
-
-        var target = this.hash,
-            $target = $(target);
-        $('.main-navigation a[href="' + target + '"]').addClass('active');
-        $('.main-navigation a:not([href="' + target + '"])').removeClass('active');
-        $('html, body').stop().animate({
-            'scrollTop': ($target.offset()) ? $target.offset().top : 0
-        }, 900, 'swing', function() {
-            window.location.hash = target;
-        });
-    });
 
 
     /*---------------------------------------*/

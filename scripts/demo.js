@@ -42,4 +42,9 @@
 			$('#switch-style').animate({'left':'0'});
 		}
 	});
+
+
+
+
+    
 });

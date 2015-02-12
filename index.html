@@ -1,7 +1,8 @@
 <!doctype html>
-<html class="no-js">
+<html class="no-js" ng-app="wwwApp">
 
 <head>
+    <base href="/">
     <meta charset="utf-8">
     <title></title>
     <meta name="description" content="">
@@ -85,7 +86,7 @@
     <!-- CSS FOR DEMO - NOT INCLUDED IN MAIN FILES -->
 </head>
 
-<body ng-app="wwwApp">
+<body  ng-controller="MainCtrl" ng-init="init()">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -103,7 +104,7 @@
      SECTION: HOME / HEADER  
     ============================== -->
     <!-- STICKY NAVIGATION -->
-    <div id="topBar" class="navbar navbar-inverse bs-docs-nav sticky-navigation" role="navigation" style="opacity: 1; top: 0px;">
+    <div id="topBar" class="navbar navbar-inverse bs-docs-nav navbar-fixed-top sticky-navigation appear-on-scroll" role="navigation" style="opacity: 1; top: 0px;">
         <div class="container">
             <div class="navbar-header">
 
@@ -121,17 +122,17 @@
             </div>
 
             <!-- TOP BAR -->
-            <div class="navbar-collapse collapse" id="stamp-navigation">
+            <div class="navbar-collapse collapse " id="stamp-navigation">
 
                 <!-- NAVIGATION LINK -->
                 <ul class="nav navbar-nav navbar-left main-navigation small-text">
-                    <li class="not-active"><a href="#section2">首页</a>
+                    <li class="not-active"><a href="/">首页</a>
                     </li>
                     <li><a href="#section5">解决方案</a>
                     </li>
-                    <li><a href="#section6">评估体系</a>
+                    <li><a href="#section7">评估体系</a>
                     </li>
-                    <li><a href="#section7">供应链金融</a>
+                    <li><a href="#section9">供应链金融</a>
                     </li>
                     <li><a href="#section10">运营服务</a>
                     </li>
@@ -144,7 +145,7 @@
                 <ul class="nav navbar-nav navbar-right login-register small-text">
                     <li class="login js-login"><a href="#">登陆</a>
                     </li>
-                    <li class="register-button js-register inpage-scroll"><a href="#/join" class="navbar-register-button">加入我们</a>
+                    <li class="register-button js-register inpage-scroll"><a href="/join" class="navbar-register-button">加入我们</a>
                     </li>
                 </ul>
             </div>
@@ -196,13 +197,11 @@
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
-    <script src="bower_components/stickUp/stickUp.js"></script>
     <script src="bower_components/WOW/dist/wow.js"></script>
     <script src="bower_components/ajaxchimp/jquery.ajaxchimp.js"></script>
     <script src="bower_components/retina.js/dist/retina.js"></script>
     <script src="bower_components/jquery.stellar/jquery.stellar.js"></script>
     <script src="bower_components/nivo-lightbox/nivo-lightbox.js"></script>
-    <script src="bower_components/jQuery-One-Page-Nav/jquery.nav.js"></script>
     <script src="bower_components/raf.js/raf.js"></script>
     <script src="bower_components/smoothscroll/dist/smoothscroll.js"></script>
     <script src="bower_components/owl.carousel.ta/owl-carousel/owl.carousel.js"></script>
@@ -220,11 +219,8 @@
     ============================== -->
     <script>
 
+
     </script>
-
-    <!-- CUSTOM JS  -->
-    <script src="scripts/custom.js"></script>
-
 
     <!-- =========================================================
      STYLE SWITCHER | ONLY FOR DEMO NOT INCLUDED IN MAIN FILES
