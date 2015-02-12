@@ -45,18 +45,6 @@ angular.module('wwwApp').controller('MainCtrl', ['$anchorScroll', '$location', '
 
 
             /*---------------------------------------*/
-            /*  STELLAR FOR BACKGROUND SCROLLING
-            /*---------------------------------------*/
-            setTimeout(function() {
-
-                $(window).stellar({
-                    horizontalScrolling: false,
-                    responsive: true
-                });
-
-            }, 1000);
-
-            /*---------------------------------------*/
             /*  CONTACT FORM
             /*---------------------------------------*/
 
