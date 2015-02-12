@@ -22,6 +22,7 @@
 
 .cbp-hrmenu > ul > li {
 	display: inline-block;
+	float:left;
 }
 
 .cbp-hrmenu > ul > li > a,
@@ -63,6 +64,11 @@
 	padding: 0 2em 0;
 }
 
+.cbp-hrmenu .cbp-hrsub-inner > div > ul > li {
+
+	text-align: left;
+}
+
 .cbp-hrmenu .cbp-hrsub-inner:before,
 .cbp-hrmenu .cbp-hrsub-inner:after {
 	content: " ";
@@ -83,6 +89,7 @@
 	margin: 0;
 	font-size: 160%;
 	font-weight: 300;
+	text-align: left;
 }
 
 /* Examples for media queries */
