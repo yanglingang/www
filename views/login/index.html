@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" ng-controller="LoginCtrl">
     <div class="row" style="padding: 10px 0px 0px 0px">
         <div class="login-container animated fadeInDown">
             <div class="loginbox bg-white">
@@ -12,7 +12,7 @@
                 </div>
 
                 <div class="loginbox-submit">
-                    <input type="button" class="btn btn-blue btn-block" value="登 录">
+                    <input type="button" class="btn btn-blue btn-block" value="登 录" ng-click="login()">
                 </div>
                 <div class="loginbox-forgot">
                     <a href="">忘记密码?</a>
