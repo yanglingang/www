@@ -106,6 +106,12 @@ angular.module('wwwApp').controller('MainCtrl', ['$anchorScroll', '$location', '
                     $("#stickUpBar").css("position", "");
                 }
 
+                if (top > 0) {
+                    $('footer').removeClass('navbar-fixed-bottom');
+                } else {
+                    $('footer').addClass('navbar-fixed-bottom');
+                }
+
                 /* if (top > 95) {
                         $('.js-login').fadeOut(20);
                         }

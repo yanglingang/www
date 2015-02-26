@@ -32,6 +32,9 @@ angular
             }).when('/join', {
                 templateUrl: 'views/join/index.html',
                 controller: 'JoinCtrl'
+            }).when('/login', {
+                templateUrl: 'views/login/index.html',
+                controller: 'JoinCtrl'
             })
             .otherwise({
                 redirectTo: '/'

@@ -80,6 +80,8 @@ body {
     text-align: center;
     overflow-x: hidden !important;
     margin: auto !important;
+    padding-top: 75px;
+    background-color: #eee;
 }
 /*---------------------------------------
    1.2 PRE-LOADER              
@@ -426,8 +428,8 @@ strong, .strong {
     background-position: 40% -590px;
 }
 .header .overlay-layer {
-    padding-top: 134px;
-    padding-bottom: 125px;
+    padding-top: 80px;
+    padding-bottom: 100px;
     height: auto;
 }
 /* STICKY NAVIGATION AND LOGO */
