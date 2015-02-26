@@ -1,290 +1,145 @@
-
-/* ##########  */
-/*   $GLOBAL   */
-/* ##########  */
-/* line 10, ../sass/typica-login.scss */
-html {
-  height: 100%;
-}
-
-
-
-
-/* line 21, ../sass/typica-login.scss */
-.blue {
-  color: #447fc8;
-}
-
-/* line 25, ../sass/typica-login.scss */
-.btn-black {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  padding: 5px 20px;
-  background-color: #222222;
-  background-image: none;
-  color: white;
-  text-shadow: none;
-}
-/* line 33, ../sass/typica-login.scss */
-.btn-black:hover {
-  background: #333333;
-  color: white;
-}
-/* ####### */
-/* $LOGIN  */
-/* ####### */
-/* line 80, ../sass/typica-login.scss */
-#login-wraper {
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
-  border-radius: 15px;
-  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  display: block;
-  margin-top: -185px;
-  margin-left: -235px;
-  padding: 25px;
-  width: 420px;
-  height: 320px;
-  background: white;
-  text-align: center;
-}
-
-/* line 97, ../sass/typica-login.scss */
-.login-form legend {
-  margin-top: 5px;
-  margin-bottom: 30px;
-  padding-bottom: 25px;
-}
-/* line 102, ../sass/typica-login.scss */
-.login-form .body {
-  padding-bottom: 30px;
-  border-bottom: 1px solid #eeeeee;
-}
-/* line 106, ../sass/typica-login.scss */
-.login-form .footer {
-  margin-top: 20px;
-}
-/* line 108, ../sass/typica-login.scss */
-.login-form .footer .checkbox.inline {
-  display: inline;
-}
-/* line 110, ../sass/typica-login.scss */
-.login-form .footer .checkbox.inline input[type="checkbox"] {
-  float: none;
-  margin-top: -4px;
-}
-/* line 115, ../sass/typica-login.scss */
-.login-form .footer .btn {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  margin-left: 15px;
-  padding: 7px 25px;
-  background-image: none;
-}
-
-/* ######### */
-/* $REGISTER */
-/* ######### */
-/* line 127, ../sass/typica-login.scss */
-#register-wraper {
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
-  border-radius: 15px;
-  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
-  margin-top: 25px;
-  margin-bottom: 70px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  background: white;
-  text-align: center;
-}
-
-/* line 137, ../sass/typica-login.scss */
-#register-form {
-  margin: 0 auto;
-  width: 350px;
-}
-/* line 140, ../sass/typica-login.scss */
-#register-form .control-inline {
-  display: inline-block;
-}
-/* line 143, ../sass/typica-login.scss */
-#register-form legend {
-  margin-bottom: 15px;
-  border-bottom: none;
-}
-/* line 147, ../sass/typica-login.scss */
-#register-form input.input-huge {
-  width: 318px;
-}
-/* line 150, ../sass/typica-login.scss */
-#register-form .control-group {
-  margin-bottom: 0;
-}
-/* line 153, ../sass/typica-login.scss */
-#register-form .checkbox.inline {
-  margin-bottom: 10px;
-  padding: 0;
-  font-size: 98%;
-}
-/* line 157, ../sass/typica-login.scss */
-#register-form .checkbox.inline input {
-  margin-right: 10px;
-}
-/* line 161, ../sass/typica-login.scss */
-#register-form .body {
-  overflow-y: auto;
-  height: auto;
-}
-/* line 165, ../sass/typica-login.scss */
-#register-form .btn {
-  padding: 10px 40px;
-  background-image: none;
-  box-shadow: none;
-}
-
-/* line 171, ../sass/typica-login.scss */
-.register-info-wraper {
-  background: rgba(0, 0, 0, 0.2);
-}
-
-/* line 174, ../sass/typica-login.scss */
-#register-info {
-  position: relative;
-  padding: 25px;
-}
-/* line 177, ../sass/typica-login.scss */
-#register-info ul {
-  margin-right: 25px;
-}
-/* line 179, ../sass/typica-login.scss */
-#register-info ul li {
-  margin-bottom: 25px;
-}
-
-/* ####### */
-/* $FOOTER */
-/* ####### */
-/* line 185, ../sass/typica-login.scss */
-footer.white {
-  padding-top: 20px;
-  height: 50px;
-  background: white;
-  text-align: center;
-}
-
-
-/* login form */
-/* line 17, D:/DropBox/bootstrap/typica-login/sass/includes/_fonts.scss */
-.login-form legend {
-  font-family: 'Lato', Helvetica, sans-serif;
-  font-size: 36px;
-  font-weight: 300;
-  color: #333333;
-  -webkit-font-smoothing: subpixel-antialiased;
-}
-
-/* line 24, D:/DropBox/bootstrap/typica-login/sass/includes/_fonts.scss */
-.login-form label {
-  font-family: 'Lato', Helvetica, sans-serif;
-  font-size: 20px;
-  color: #333333;
-  font-weight: 300;
-}
-
-/* register form */
-/* line 32, D:/DropBox/bootstrap/typica-login/sass/includes/_fonts.scss */
-#register-form legend {
-  font-family: 'Lato', Helvetica, sans-serif;
-  font-size: 36px;
-  font-weight: 300;
-  color: #333333;
-  -webkit-font-smoothing: subpixel-antialiased;
-}
-/* line 39, D:/DropBox/bootstrap/typica-login/sass/includes/_fonts.scss */
-#register-form label {
-  font-family: 'Lato', Helvetica, sans-serif;
-  font-size: 18px;
-  color: #333333;
-  font-weight: 300;
-}
-
-/* register info */
-/* line 48, D:/DropBox/bootstrap/typica-login/sass/includes/_fonts.scss */
-#register-info h1 {
-  font-size: 42px;
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
-  line-height: 55px;
-  font-weight: 700;
-  text-align: right;
-  padding-bottom: 50px;
-  color: white;
-}
-/* line 57, D:/DropBox/bootstrap/typica-login/sass/includes/_fonts.scss */
-#register-info ul {
-  text-align: right;
-  color: white;
-  font-size: 24px;
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
-}
-
-/* ######## */
-/* $QUERIES */
-/* ######## */
-/* Portrait tablet*/
-@media (max-width: 980px) {
-
-  /* line 21, D:/DropBox/bootstrap/typica-login/sass/includes/_queries.scss */
-  #login-wraper {
+.login-container {
     position: relative;
-    top: 0;
-    margin-top: 25px;
-  }
+    margin: 10% auto;
+    max-width: 300px
 }
-@media (max-width: 495px) {
-  /* line 29, D:/DropBox/bootstrap/typica-login/sass/includes/_queries.scss */
-  #login-wraper {
-    width: auto;
-    height: auto;
-    margin-left: 0;
-    margin-right: 0;
-    left: 0;
-  }
-
-  /* line 36, D:/DropBox/bootstrap/typica-login/sass/includes/_queries.scss */
-  #register-form {
-    width: auto;
-  }
-  /* line 38, D:/DropBox/bootstrap/typica-login/sass/includes/_queries.scss */
-  #register-form .control-inline {
-    display: block;
-  }
-  /* line 41, D:/DropBox/bootstrap/typica-login/sass/includes/_queries.scss */
-  #register-form input {
-    display: block;
-    margin: 0 auto;
-  }
-  /* line 44, D:/DropBox/bootstrap/typica-login/sass/includes/_queries.scss */
-  #register-form input.input-huge, #register-form input.input-medium {
-    width: auto;
-    display: block;
-  }
-  /* line 49, D:/DropBox/bootstrap/typica-login/sass/includes/_queries.scss */
-  #register-form .btn {
-    display: block;
-    margin: 0 auto;
-  }
+.login-container .loginbox {
+    position: relative;
+    width: 300px !important;
+    height: auto !important;
+    padding: 0 0 20px 0;
+    -webkit-box-shadow: 0 0 14px rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0 0 14px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 14px rgba(0, 0, 0, .1)
+}
+.login-container .loginbox .loginbox-title {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 35px;
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: normal;
+    color: #444
+}
+.login-container .loginbox .loginbox-social {
+    padding: 0 10px 10px;
+    text-align: center
+}
+.login-container .loginbox .loginbox-social .social-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #a9a9a9;
+    margin-top: 10px
+}
+.login-container .loginbox .loginbox-social .social-buttons {
+    height: 80px;
+    padding: 15px 35px;
+    text-align: center
+}
+.login-container .loginbox .loginbox-social .social-buttons .button-facebook {
+    float: left;
+    border: 2px solid #3b5998;
+    color: #3b5998;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 30px;
+    background-color: #fff
+}
+.login-container .loginbox .loginbox-social .social-buttons .button-facebook i {
+    font-size: 26px;
+    line-height: 50px
+}
+.login-container .loginbox .loginbox-social .social-buttons .button-twitter {
+    float: left;
+    border: 2px solid #29c1f6;
+    color: #29c1f6;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 30px;
+    background-color: #fff
+}
+.login-container .loginbox .loginbox-social .social-buttons .button-twitter i {
+    font-size: 26px;
+    line-height: 50px
+}
+.login-container .loginbox .loginbox-social .social-buttons .button-google {
+    border: 2px solid #ef4f1d;
+    color: #ef4f1d;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #fff
+}
+.login-container .loginbox .loginbox-social .social-buttons .button-google i {
+    font-size: 26px;
+    line-height: 50px
+}
+.login-container .loginbox .loginbox-or {
+    position: relative;
+    text-align: center;
+    height: 20px
+}
+.login-container .loginbox .loginbox-or .or {
+    position: absolute;
+    top: 0;
+    -lh-property: 0;
+    left: -webkit-calc(50% - 25px);
+    left: -moz-calc(50% - 25px);
+    left: calc(50% - 25px);
+    width: 50px;
+    height: 20px;
+    background-color: #fff;
+    color: #999;
+    margin: 0 auto
+}
+.login-container .loginbox .loginbox-or .or-line {
+    position: absolute;
+    height: 1px;
+    top: 10px;
+    left: 40px;
+    right: 40px;
+    background-color: #ccc
+}
+.login-container .loginbox .loginbox-textbox {
+    padding: 10px 40px
+}
+.login-container .loginbox .loginbox-textbox .form-control {
+    -webkit-border-radius: 3px !important;
+    -webkit-background-clip: padding-box !important;
+    -moz-border-radius: 3px !important;
+    -moz-background-clip: padding !important;
+    border-radius: 3px !important;
+    background-clip: padding-box !important
+}
+.login-container .loginbox .loginbox-forgot {
+    padding-left: 40px
+}
+.login-container .loginbox .loginbox-forgot a {
+    font-size: 11px;
+    color: #666
+}
+.login-container .loginbox .loginbox-submit {
+    padding: 10px 40px
+}
+.login-container .loginbox .loginbox-signup {
+    text-align: center;
+    padding-top: 10px
+}
+.login-container .loginbox .loginbox-signup a {
+    font-size: 13px;
+    color: #666
+}
+.login-container .logobox {
+    width: 300px !important;
+    height: 50px !important;
+    padding: 5px;
+    margin-top: 15px;
+    -webkit-box-shadow: 0 0 14px rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0 0 14px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 14px rgba(0, 0, 0, .1);
+    background-color: #fff;
+    text-align: left
 }
