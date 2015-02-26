@@ -17,7 +17,8 @@ angular
         'ngResource',
         'ngRoute',
         'ngSanitize',
-        'ngTouch'
+        'ngTouch',
+        'LocalStorageModule'
     ])
     .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
         $locationProvider.html5Mode(true);
@@ -34,7 +35,10 @@ angular
                 controller: 'JoinCtrl'
             }).when('/login', {
                 templateUrl: 'views/login/index.html',
-                controller: 'JoinCtrl'
+                controller: 'LoginCtrl'
+            }).when('/sys', {
+                templateUrl: 'views/sys/index.html',
+                controller: 'SysCtrl'
             })
             .otherwise({
                 redirectTo: '/'
