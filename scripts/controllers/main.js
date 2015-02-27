@@ -7,8 +7,17 @@
  * # MainCtrl
  * Controller of the wwwApp
  */
-angular.module('wwwApp').controller('MainCtrl', ['$anchorScroll', '$location', '$scope',
-    function($anchorScroll, $location, $scope) {
+angular.module('wwwApp').controller('MainCtrl', ['$anchorScroll', '$location', '$scope', 'MenuService',
+    function($anchorScroll, $location, $scope, MenuService) {
+        MenuService.outerMenu().then(function(data) {
+            $scope.menu = data;
+            //alert(JSON.stringify($scope.menu));
+
+        });
+        $scope.$watch('menu', function() {
+            cbpHorizontalMenu.init();
+        });
+
         $anchorScroll.yOffset = 1;
 
         // $scope.gotoAnchor = function(x) {
@@ -25,10 +34,7 @@ angular.module('wwwApp').controller('MainCtrl', ['$anchorScroll', '$location', '
         //     }
         // };
         $scope.init = function() {
-            setTimeout(function() {
-                /* global cbpHorizontalMenu */
-                cbpHorizontalMenu.init();
-            }, 1000);
+
 
             $(".status").fadeOut();
             $(".preloader").delay(1000).fadeOut("slow");
