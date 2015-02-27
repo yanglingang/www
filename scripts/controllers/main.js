@@ -7,16 +7,28 @@
  * # MainCtrl
  * Controller of the wwwApp
  */
-angular.module('wwwApp').controller('MainCtrl', ['$anchorScroll', '$location', '$scope', 'MenuService',
-    function($anchorScroll, $location, $scope, MenuService) {
-        MenuService.outerMenu().then(function(data) {
-            $scope.menu = data;
-            //alert(JSON.stringify($scope.menu));
+angular.module('wwwApp').controller('MainCtrl', ['$anchorScroll', '$location', '$scope', '$timeout', 'MenuService',
+    function($anchorScroll, $location, $scope, $timeout, MenuService) {
 
-        });
         $scope.$watch('menu', function() {
-            cbpHorizontalMenu.init();
+            //DOM渲染后加载
+            $timeout(function() {
+                cbpHorizontalMenu.init();
+            }, 0, false);
         });
+
+        $scope.loadOuterMenu = function() {
+            MenuService.getOuterMenu().then(function(data) {
+                $scope.menu = data;
+                //alert(JSON.stringify($scope.menu));
+            });
+        };
+
+        $scope.loadInnerMenu = function() {
+            MenuService.getInnerMenu().then(function(data) {
+                $scope.menu = data;
+            });
+        };
 
         $anchorScroll.yOffset = 1;
 
@@ -34,7 +46,7 @@ angular.module('wwwApp').controller('MainCtrl', ['$anchorScroll', '$location', '
         //     }
         // };
         $scope.init = function() {
-
+            $scope.loadOuterMenu();
 
             $(".status").fadeOut();
             $(".preloader").delay(1000).fadeOut("slow");

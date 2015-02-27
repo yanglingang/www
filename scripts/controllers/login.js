@@ -129,6 +129,8 @@ angular.module('wwwApp').controller('LoginCtrl', ['$scope', '$location', 'authSe
     $scope.message = '';
 
     $scope.login = function() {
+        
+        $scope.loadInnerMenu();
         $location.path('/sys');
         // authService.login($scope.loginData).then(function(response) {
 

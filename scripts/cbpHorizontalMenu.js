@@ -21,7 +21,6 @@ var cbpHorizontalMenu = (function() {
         $listItems = $('#cbp-hrmenu > ul > li');
         $menuItems = $listItems.children('a');
         current = -1;
-
         $menuItems.on('click', open);
         //$listItems.on( 'click', function( event ) { event.stopPropagation(); } );
     }
